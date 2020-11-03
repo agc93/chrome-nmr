@@ -1,7 +1,7 @@
 {
     "name": "Nexus Link Fixer",
-    "version": "0.0.1",
-    "description": "Fixes old Nexus Mods page links, redirecting to the newer format.",
+    "version": "0.0.2",
+    "description": "Fixes old Nexus Mods page and wiki links, redirecting to the newer format.",
     "icons": {
         "48": "nmr-48.png",
         "128": "nmr-128.png"
@@ -9,7 +9,6 @@
     "manifest_version": 2,
     "permissions": [
         "webRequest",
-        "*://*.nexusmods.com/*",
         "*://*.tesnexus.com/*",
         "webRequestBlocking"
     ],

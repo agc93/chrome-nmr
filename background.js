@@ -8,11 +8,12 @@ chrome.webRequest.onBeforeRequest.addListener(
       // console.log('parsed URL for redirection: ' + host + path);
       if (oldGames.includes(host)) {
         return {redirectUrl: `https://nexusmods.com/${host}${path}`};
+      } else if (host == 'wiki') {
+        return {redirectUrl: `https://wiki.nexusmods.com${path}`};
       }
     },
     {
         urls: [
-            "*://*.nexusmods.com/*",
             "*://*.tesnexus.com/*"
         ],
         types: ["main_frame", "sub_frame"]
